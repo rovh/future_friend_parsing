@@ -150,12 +150,12 @@ def run_parsing():
                     f.write(' ')
                     f.write(u[2])
 
-            f.write("\n")
+            # f.write("\n")
             f.write('\n')
 
 
     driver.quit()
 
-run_parsing()
+# run_parsing()
 
 
