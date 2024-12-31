@@ -27,13 +27,14 @@ def run_parsing():
     text = "00000"
 
     try:
-        serv=ChromeService(ChromeDriverManager().install())
+        # serv=ChromeService(ChromeDriverManager().install())
         
-        chrome_options = webdriver.ChromeOptions()
-        chrome_options.add_argument("--no-sandbox")
-        chrome_options.add_argument("--headless")
-        chrome_options.add_argument("--disable-gpu")
-        browser = webdriver.Chrome(service=serv, options=chrome_options)
+        # chrome_options = webdriver.ChromeOptions()
+        # chrome_options.add_argument("--no-sandbox")
+        # chrome_options.add_argument("--headless")
+        # chrome_options.add_argument("--disable-gpu")
+        # browser = webdriver.Chrome(service=serv, options=chrome_options)
+        browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())) 
         browser.implicitly_wait(5)
 
 
