@@ -3,3 +3,6 @@ PyTelegramBotAPI
 selenium
 beautifulsoup4
 webdriver-manager
+pytest-playwright
+playwright install
+

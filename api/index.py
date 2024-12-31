@@ -4,6 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
 
 
 app = Flask(__name__)
@@ -34,8 +35,8 @@ def run_parsing():
         # chrome_options.add_argument("--headless")
         # chrome_options.add_argument("--disable-gpu")
         # browser = webdriver.Chrome(service=serv, options=chrome_options)
-        browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())) 
-        browser.implicitly_wait(5)
+        # browser = webdriver.Chrome(service=Service())
+        # browser.implicitly_wait(5)
 
 
         browser.get("https://www.google.com")
