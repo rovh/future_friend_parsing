@@ -25,24 +25,25 @@ def about():
 def run_parsing():
 
 
-    text = "00000"
+    text = "1111111111111"
 
-    try:
-        # serv=ChromeService(ChromeDriverManager().install())
-        # serv=ChromeService(ChromeDriverManager().install())
+    # try:
+    #     # serv=ChromeService(ChromeDriverManager().install())
+    #     # serv=ChromeService(ChromeDriverManager().install())
         
-        # chrome_options = webdriver.ChromeOptions()
-        # chrome_options.add_argument("--no-sandbox")
-        # chrome_options.add_argument("--headless")
-        # chrome_options.add_argument("--disable-gpu")
-        # browser = webdriver.Chrome(service=serv, options=chrome_options)
-        # browser = webdriver.Chrome(options=chrome_options)
-        # browser.implicitly_wait(5)
+    #     # chrome_options = webdriver.ChromeOptions()
+    #     # chrome_options.add_argument("--no-sandbox")
+    #     # chrome_options.add_argument("--headless")
+    #     # chrome_options.add_argument("--disable-gpu")
+    #     # browser = webdriver.Chrome(service=serv, options=chrome_options)
+    #     # browser = webdriver.Chrome(options=chrome_options)
+    #     # browser.implicitly_wait(5)
 
 
-        browser = webbrowser.get("https://www.google.com")
-        text = ("Page title was '{}'".format(browser.title))
-    finally:
-        browser.quit()
-        return text
+    #     browser = webbrowser.get("https://www.google.com")
+    #     text = ("Page title was '{}'".format(browser.title))
+    # finally:
+    #     browser.quit()
+    #     return text
+    return text
 
