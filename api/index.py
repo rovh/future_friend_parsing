@@ -28,7 +28,7 @@ def run_parsing():
     text = "1111111111111"
 
     #     # serv=ChromeService(ChromeDriverManager().install())
-    serv=Service(executable_path="/chromedriver")
+    serv=Service("/chromedriver")
         
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--no-sandbox")
