@@ -12,7 +12,7 @@ def home():
     t = "0000000"
     t = run_parsing()
 
-    return 'Hello, World!' + t
+    return t
 
 @app.route('/about')
 def about():
