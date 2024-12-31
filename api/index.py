@@ -27,7 +27,6 @@ def run_parsing():
 
     text = "1111111111111"
 
-    # try:
     #     # serv=ChromeService(ChromeDriverManager().install())
     #     # serv=ChromeService(ChromeDriverManager().install())
         
@@ -40,8 +39,10 @@ def run_parsing():
     #     # browser.implicitly_wait(5)
 
 
-    #     browser = webbrowser.get("https://www.google.com")
-    #     text = ("Page title was '{}'".format(browser.title))
+    browser = webbrowser.get("https://www.google.com")
+    text = ("Page title was '{}'".format(browser.title))
+    # 
+    # 
     # finally:
     #     browser.quit()
     #     return text
