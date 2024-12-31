@@ -40,8 +40,8 @@ def run_parsing():
 
     # browser = webbrowser.get("https://www.google.com")
 
-    browser = webbrowser.open("https://www.google.com")
-    text = ("Page title was '{}'".format(browser.title))
+    text = webbrowser.open("https://www.google.com")
+    # text = ("Page title was '{}'".format(browser.title))
     # 
     # 
     # finally:
