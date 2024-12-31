@@ -12,7 +12,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     t = "0000000"
-    t = run_parsing()
+    # t = run_parsing()
 
     return t
 
