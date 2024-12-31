@@ -38,7 +38,7 @@ def run_parsing():
     driver = webdriver.Chrome(source=serv, options=chrome_options)
     #     # browser.implicitly_wait(5)
 
-    browser = driver.get("https://www.google.com")
+    # browser = driver.get("https://www.google.com")
 
     # webbrowser.open("https://www.google.com")
     # text = ("Page title was '{}'".format(browser.title))
