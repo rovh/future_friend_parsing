@@ -4,4 +4,4 @@ selenium
 beautifulsoup4
 webdriver-manager
 pytest-playwright
-
+chromedriver-py

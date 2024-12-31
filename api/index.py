@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
-
+from chromedriver_py import binary_path
 
 app = Flask(__name__)
 
@@ -27,8 +27,10 @@ def run_parsing():
 
     text = "1111111111111"
 
-    serv=Service(ChromeDriverManager().install())
+    # serv=Service(ChromeDriverManager().install())
+    
     # serv=Service("/chromedriver")
+    serv=Service(binary_path)
         
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--no-sandbox")
