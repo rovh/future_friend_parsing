@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/api')
 def hello_world():
 
     # webbrowser.open('http://google.co.kr', new=2)
