@@ -9,10 +9,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
+    t = "0000000"
+    t = run_parsing()
 
-    run_parsing()
-
-    return 'Hello, World!'
+    return 'Hello, World!' + t
 
 @app.route('/about')
 def about():
