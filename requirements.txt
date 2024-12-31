@@ -4,5 +4,5 @@ selenium
 beautifulsoup4
 webdriver-manager
 pytest-playwright
-playwright
+(-m playwright install)
 
