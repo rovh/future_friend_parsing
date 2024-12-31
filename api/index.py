@@ -7,18 +7,14 @@ from selenium.webdriver.common.by import By
 
 app = Flask(__name__)
 
-@app.route('/api')
-def hello_world():
-
-    # webbrowser.open('http://google.co.kr', new=2)
-
-    text = run_parsing()
-
-    return text
+@app.route('/')
+def home():
+    return 'Hello, World!'
 
 
-if __name__ == 'main':
-  app.run(debug=True)
+@app.route('/about')
+def about():
+    return 'About'
 
 
 
