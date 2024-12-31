@@ -12,7 +12,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     t = "0000000"
-    # t = run_parsing()
+    t = run_parsing()
 
     return t
 
@@ -28,14 +28,15 @@ def run_parsing():
     text = "00000"
 
     try:
-        serv=ChromeService(ChromeDriverManager().install())
+        # serv=ChromeService(ChromeDriverManager().install())
+        # serv=ChromeService(ChromeDriverManager().install())
         
         chrome_options = webdriver.ChromeOptions()
         # chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--headless")
         # chrome_options.add_argument("--disable-gpu")
-        browser = webdriver.Chrome(service=serv, options=chrome_options)
-        # browser = webdriver.Chrome(service=Service())
+        # browser = webdriver.Chrome(service=serv, options=chrome_options)
+        browser = webdriver.Chrome(options=chrome_options)
         # browser.implicitly_wait(5)
 
 
