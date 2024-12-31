@@ -35,7 +35,7 @@ def run_parsing():
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--disable-gpu")
     #     # browser = webdriver.Chrome(service=serv, options=chrome_options)
-    driver = webdriver.Chrome(source=serv, options=chrome_options)
+    driver = webdriver.Chrome(service=serv, options=chrome_options)
     #     # browser.implicitly_wait(5)
 
     # browser = driver.get("https://www.google.com")
